@@ -303,11 +303,11 @@ export class AdminAuthService {
     });
 
     // Send OTP
-    if (channel === OtpChannel.EMAIL) {
-      await this.emailService.sendOtp(admin.email, otp);
-    } else {
-      await this.smsService.sendOtp(admin.phone!, otp);
-    }
+    // if (channel === OtpChannel.EMAIL) {
+    //  await this.emailService.sendOtp(admin.email, otp);
+   // } else {
+     // await this.smsService.sendOtp(admin.phone!, otp);
+   // }
 
     return {
       message: `OTP sent successfully to your ${channel === OtpChannel.EMAIL ? 'email' : 'phone number'}`,
