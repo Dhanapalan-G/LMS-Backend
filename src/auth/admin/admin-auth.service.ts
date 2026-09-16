@@ -313,6 +313,7 @@ export class AdminAuthService {
       message: `OTP sent successfully to your ${channel === OtpChannel.EMAIL ? 'email' : 'phone number'}`,
       otp,
       channel,
+      admin,
     };
   }
 
